@@ -1,0 +1,8 @@
+# Android Studio / IntelliJ
+.idea/
+.gradle/
+local.properties
+*.iml
+/build/
+/app/build/
+.DS_Store

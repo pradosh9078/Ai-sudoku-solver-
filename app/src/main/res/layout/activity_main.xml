@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F7FF"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sudoku Solver"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your puzzle or load a sample."
+        android:textSize="14sp"
+        android:textColor="#455A64"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <GridLayout
+        android:id="@+id/boardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="9"
+        android:columnCount="9"
+        android:layout_gravity="center_horizontal"
+        android:background="#DDEAFB"
+        android:padding="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/solveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Solve" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sampleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Load Sample" />
+
+</LinearLayout>
